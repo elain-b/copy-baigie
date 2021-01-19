@@ -52,6 +52,7 @@ header {
     background-color: #fff;
     position: fixed;
     z-index: 99;
+    top: 0;
 }
 
 nav {
@@ -119,14 +120,14 @@ header li {
 .b-button {
     border: 0.15rem solid #619FE6;
     border-radius: .55rem;
-    padding: 20px;
+    padding: 2em;
     color: #619FE6;
 }
 
 .b-button2 {
     border: 0.15rem solid #619FE6;
     border-radius: .55rem;
-    padding: 20px;
+    padding: 2em;
     color: #fff;
     background-color: #619FE6;
 }
@@ -247,8 +248,8 @@ header li {
     margin: 40px 0;
 }
 
-.w-1060 {
-    width: 1060px;
+.w-100 {
+    width: 100%;
 }
 
 .bo-1 {
@@ -293,7 +294,7 @@ header li {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px;
+    padding: 1em;
 }
 
 .sec6 img {
@@ -353,6 +354,7 @@ header li {
 }
 
 .sec8 .fle {
+    justify-content: center;
     align-items: center;
 }
 
@@ -389,6 +391,7 @@ header li {
 }
 
 .back-white {
+    display: flex;
     justify-content: center;
     background-color: #fff;
     margin: 30px 0;
@@ -399,7 +402,8 @@ header li {
     border: 1px solid #000;
     border-radius: 50%;
     margin: 20px;
-    padding: 10px 6px;
+    padding: 2.5% 1%;
+    width: 10%;
 }
 
 .m-lr-30 {
@@ -476,11 +480,20 @@ header li {
     z-index: 9999;
 }
 
+.sp-under-nav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* height: 10vh; */
+    z-index: 999;
+}
+
 /* SPナビゲーション */
 
-/* 480px〜599px：SP横
+/* 599px〜896px：SP横
 ------------------------------ */
-@media screen and (max-width:768px) and (max-width:599px) { 
+@media screen and (max-width:896px) { 
     body {
         font-size: 1rem;
     }
@@ -488,7 +501,7 @@ header li {
     .open {
         display: inline-block;
         right: 40px;
-        bottom: 110px;
+        bottom: 15%;
         background-color: #619FE6;
         padding: 10px 30px;
         border-radius: 50px;
@@ -503,7 +516,6 @@ header li {
         height: 100vh;
         position: absolute;
         width: 100%;
-        /* z-index: 99999999999; */
     }
     .modal__content{
         left: 50%;
@@ -583,8 +595,31 @@ header li {
         display: none;
     }
 
+    /* 下ナビゲーションバー  */
+    .sp-under-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        background: rgba(0,0,0,0.9);
+    }
+
+    .sp-under-nav .b-button {
+        margin: 10px;
+        padding: 10px 20px;
+    }
+
+    .sp-under-nav .b-button2 {
+        margin: 10px;
+        padding: 10px 20px;
+    }
+
     header {
         position: initial;
+    }
+
+    header img, p {
+        margin-bottom: 0;
     }
 
     h1 {
@@ -614,10 +649,6 @@ header li {
     
     .m-10 {
         margin-bottom: 50px;
-    }
-
-    .sec3 img {
-        width: 25%;
     }
 
     .sp-fle {
@@ -680,5 +711,136 @@ header li {
 
     .back-white {
         padding: 10px 0 40px 0;
+    }
+
+    /* footer */
+    .sm-fle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sm-op-1 {
+        order: 2;
+    }
+
+    .sm-op-2 {
+        order: 1;
+        display: flex;
+        margin-bottom: 30px;
+    }
+}
+
+/* TBナビゲーション */
+
+/* 1024px：TB横
+------------------------------ */
+@media screen and (max-width: 1024px) and (orientation: portrait) { 
+    body {
+        font-size: 1rem;
+    }
+
+    .open {
+        display: inline-block;
+        right: 40px;
+        bottom: 15%;
+        background-color: #619FE6;
+        padding: 10px 30px;
+        border-radius: 50px;
+    }
+
+    .model {
+        z-index: 9999;
+    }
+
+    .modal__bg{
+        background: rgba(0,0,0,0.9);
+        height: 100vh;
+        position: absolute;
+        width: 100%;
+    }
+    .modal__content{
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
+    }
+
+    .modal p, a {
+        color: #fff;
+    }
+
+    .menu-fle {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-size: 0.8rem;
+    }
+
+    .menu-w-30 {
+        margin-left: 70px;
+    }
+
+    .modal li {
+        margin-bottom: 10px;
+    }
+
+    .form {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .form p {
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+
+    .call {
+        display: flex;
+        justify-content: center;
+    }
+
+    .call img {
+        width: 4%;
+        margin-right: 5px;
+        margin-bottom: 0;
+    }
+
+    .call p {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .button {
+        margin: 40px 0;
+    }
+
+    .b-button {
+        background-color: #fff;
+    }
+
+    .close {
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .close span {
+        background-color: #fff;
+        color: #619FE6;
+        padding: 10px 40px;
+        border-radius: 25rem;
+    }
+
+    .sp-nav-no {
+        display: none;
+    }
+
+    .tb-fle {
+        display: inline;
+    }
+
+    .tb-mb-60 {
+        margin-bottom: 60px;
     }
 }
