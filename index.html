@@ -7,71 +7,72 @@
     <title>baigie</title>
 </head>
 <body>
-    <div class="icon-hamburger"><span>メニュー</span></div>
-    <div class="menu-container">
-        <div class="menu">
-            <div class="menu-wrap">
-                <div class="menu-box">
-                    <div class="menu-fle">
-                        <div class="t-left">
-                            <ul>
-                                <li><a href="#">ホーム</a></li>
-                                <li><a href="#">特徴</a></li>
-                                <li><a href="#">サービス</a></li>
-                                <li><a href="#">機能</a></li>
-                                <li><a href="#">事例</a></li>
-                                <li><a href="#">価格</a></li>
-                                <li><a href="#">セミナー/イベント</a></li>
-                                <li><a href="#">価格</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="t-left menu-w-30">
-                            <ul>
-                                <li><a href="#">会社情報</a></li>
-                                <li><a href="#">ブログ/コラム</a></li>
-                                <li><a href="#">よくある質問</a></li>
-                                <li><a href="#">お知らせ</a></li>
-                                <li><a href="#">サイトマップ</a></li>
-                                <li><a href="#">プライバシーポリシー</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                
-                    <div class="hr"><hr></div>
-
-                    <div class="form">
-                        <p>お電話でのお問い合わせ</p>
-                        <div class="call">
-                            <img src="img/phone-alt-solid.svg" alt="">
-                            <p>0123-456-789</p>
-                        </div>
-                        <p>(平日00:00~00:00)</p>
-                        <div class="button">
-                            <a href="#" class="b-button">お役立ち資料</a>
-                            <a href="#" class="b-button2">お問い合わせ</a>
-                        </div>
+    <div class="open"><span>メニュー</span></div>
+    <div class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <div class="menu-box">
+                <div class="menu-fle">
+                    <div class="t-left">
+                        <ul>
+                            <li><a href="#">ホーム</a></li>
+                            <li><a href="#">特徴</a></li>
+                            <li><a href="#">サービス</a></li>
+                            <li><a href="#">機能</a></li>
+                            <li><a href="#">事例</a></li>
+                            <li><a href="#">価格</a></li>
+                            <li><a href="#">セミナー/イベント</a></li>
+                            <li><a href="#">価格</a></li>
+                        </ul>
                     </div>
 
-                    <div class="close"><span>閉じる</span></div>
+                    <div class="t-left menu-w-30">
+                        <ul>
+                            <li><a href="#">会社情報</a></li>
+                            <li><a href="#">ブログ/コラム</a></li>
+                            <li><a href="#">よくある質問</a></li>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">サイトマップ</a></li>
+                            <li><a href="#">プライバシーポリシー</a></li>
+                        </ul>
+                    </div>
                 </div>
+            
+                <div class="hr"><hr></div>
+
+                <div class="form">
+                    <p>お電話でのお問い合わせ</p>
+                    <div class="call">
+                        <img src="img/phone-alt-solid.svg" alt="">
+                        <p>0123-456-789</p>
+                    </div>
+                    <p>(平日00:00~00:00)</p>
+                    <div class="button">
+                        <a href="#" class="b-button">お役立ち資料</a>
+                        <a href="#" class="b-button2">お問い合わせ</a>
+                    </div>
+                </div>
+
+                <div class="close"><span>閉じる</span></div>
             </div>
         </div>
     </div>
 
     <header>
         <nav class="fle-cen hov">
-            <a href="#"><img src="img/logo.png" alt="logo"></a>
-            <ul class="sp-nav-no ver-cen hov-menu">
-                <li><a href="#">ホーム</a></li>
-                <li><a href="#">特徴</a></li>
-                <li><a href="#">サービス</a></li>
-                <li><a href="#">機能</a></li>
-                <li><a href="#">事例</a></li>
-                <li><a href="#">価格</a></li>
-                <li><a href="#">セミナー/イベント</a></li>
-                <li><a href="#">会社情報</a></li>
-            </ul>
+            <div class="fle-nav">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+                <ul class="sp-nav-no ver-cen hov-menu">
+                    <li><a href="#">ホーム</a></li>
+                    <li><a href="#">特徴</a></li>
+                    <li><a href="#">サービス</a></li>
+                    <li><a href="#">機能</a></li>
+                    <li><a href="#">事例</a></li>
+                    <li><a href="#">価格</a></li>
+                    <li><a href="#">セミナー/イベント</a></li>
+                    <li><a href="#">会社情報</a></li>
+                </ul>
+            </div>
             <ul class="ver-cen">
                 <li>
                     <div class="font-r">
@@ -505,6 +506,5 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="js.js"></script>
-    <!-- <script src="jss.js"></script> -->
 </body>
 </html>

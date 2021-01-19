@@ -51,7 +51,7 @@ header {
     margin-top: 0px;
     background-color: #fff;
     position: fixed;
-    z-index: 999999;
+    z-index: 99;
 }
 
 nav {
@@ -73,6 +73,16 @@ header ul {
 header li {
     margin-right: 20px;
 }
+
+.fle-nav {
+    display: flex;
+    align-items: center;
+}
+
+.fle-nav ul {
+    margin-left: 30px;
+}
+
 .font-r {
     text-align: right;
 }
@@ -437,24 +447,33 @@ header li {
 /* sec9 */
 
 /* SPナビゲーション */
-.icon-hamburger {
+.open {
     cursor: pointer;
     display: none;
 
     position: fixed;
     right: 100px;
     bottom: 240px;
-    z-index: 9999999;
+    z-index: 999;
     opacity: 1;
     transition: all 2.0s;
 }
 
-.icon-hamburger span {
+.open span {
     color: #fff;
 }
 
-.menu-container {
+/* .menu-container {
     position: relative;
+} */
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 /* SPナビゲーション */
@@ -466,7 +485,7 @@ header li {
         font-size: 1rem;
     }
 
-    .icon-hamburger {
+    .open {
         display: inline-block;
         right: 40px;
         bottom: 110px;
@@ -475,45 +494,47 @@ header li {
         border-radius: 50px;
     }
 
-    .menu-container p, a {
-        color: #fff;
+    .model {
+        z-index: 9999;
     }
 
-    .menu-container .menu {
-        display: none;
+    .modal__bg{
+        background: rgba(0,0,0,0.9);
+        height: 100vh;
         position: absolute;
         width: 100%;
-        background-color:rgba(0,0,0,0.9);
-        z-index: 99999999999;
+        /* z-index: 99999999999; */
     }
-    .menu-wrap {
-        display: flex;
-        justify-content: center;
+    .modal__content{
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        width: 80%;
     }
 
-    .menu-container .menu-box {
-        width: 80%;
+    .modal p, a {
+        color: #fff;
     }
 
     .menu-fle {
         display: flex;
         width: 100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
         justify-content: center;
+        font-size: 0.8rem;
     }
 
     .menu-w-30 {
         margin-left: 70px;
     }
 
-    .menu-container li {
-        margin-bottom: 20px;
+    .modal li {
+        margin-bottom: 10px;
     }
 
     .form {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 20px;
     }
 
     .form p {
@@ -546,18 +567,24 @@ header li {
     }
 
     .close {
-        margin: 180px 0 60px 280px;
+        margin: 20px 0 0 0;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .close span {
         background-color: #fff;
         color: #619FE6;
-        padding: 20px 40px;
+        padding: 10px 40px;
         border-radius: 25rem;
     }
 
     .sp-nav-no {
         display: none;
+    }
+
+    header {
+        position: initial;
     }
 
     h1 {
@@ -566,6 +593,7 @@ header li {
 
     .sec1 {
         height: 170px;
+        margin-top: 0;
     }
 
     .sp-w-80 {
